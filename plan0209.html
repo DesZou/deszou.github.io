@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-02-09 五 08:56 -->
+<!-- 2018-02-09 五 08:51 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>DesZou.github.io</title>
+<title>寒假计划</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Dez" />
 <style type="text/css">
@@ -230,86 +230,146 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">DesZou.github.io</h1>
+<h1 class="title">寒假计划</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org66f9232">1. 关于</a></li>
-<li><a href="#org6ead6f5">2. 2018年</a>
+<li><a href="#org5c5ef96">1. 概述</a></li>
+<li><a href="#orgf955646">2. 字符串</a>
 <ul>
-<li><a href="#orgdf982a6">2.1. 2月</a>
-<ul>
-<li><a href="#org3e5f4fd">2.1.1. 7日</a></li>
-<li><a href="#org4418291">2.1.2. 九日</a></li>
+<li><a href="#org9fe8bf6">2.1. AC 自动机</a></li>
+<li><a href="#orgbd481a6">2.2. 后缀 数组 / 自动机</a></li>
 </ul>
 </li>
+<li><a href="#orgdffc72e">3. 数据结构</a>
+<ul>
+<li><a href="#org7a97de6">3.1. 动态树</a></li>
+<li><a href="#org9842630">3.2. 可持久化数据结构</a></li>
 </ul>
 </li>
+<li><a href="#org2f430d5">4. 数学</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org66f9232" class="outline-2">
-<h2 id="org66f9232"><span class="section-number-2">1</span> 关于</h2>
+<div id="outline-container-org5c5ef96" class="outline-2">
+<h2 id="org5c5ef96"><span class="section-number-2">1</span> 概述</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-这是用来记录所有以后可能会用到的东西的地方，
-也是拿来好玩的。这里的 css 样式来自 <a href="http://book.emacs-china.org/">http://book.emacs-china.org/</a>。
+还有不到两个月的时间就要省选了，对于我这种各种冬令营都没机会去的人来说。
+省选就是真正的唯一一次机会。所以假期里也不能松懈，应该根据自身的情况，
+查漏补缺。
 </p>
 
-<div class="org-src-container">
-<pre class="src src-cpp">
-<span style="color: #6c3163;">#include</span> <span style="color: #3a81c3;">&lt;</span><span style="color: #2d9574;">iostream</span><span style="color: #3a81c3;">&gt;</span>
+<p>
+我在之前定下的计划里还有这么几个板块没做完：
+</p>
+<ul class="org-ul">
+<li>字符串
+<ul class="org-ul">
+<li>后缀数组</li>
+<li>后缀自动机</li>
+<li>AC 自动机</li>
+</ul></li>
+<li>数据结构
+<ul class="org-ul">
+<li>动态树</li>
+<li>可持久化的数据结构</li>
+</ul></li>
+</ul>
 
-<span style="color: #ba2f59; font-weight: bold;">int</span> <span style="color: #6c3163; font-weight: bold;">main</span><span style="color: #3a81c3;">()</span> <span style="color: #3a81c3;">{</span>
-    <span style="color: #4e3163;">std</span>::cout &lt;&lt; <span style="color: #2d9574;">"Hello, world!"</span> &lt;&lt; <span style="color: #4e3163;">std</span>::endl;
-
-    <span style="color: #3a81c3; font-weight: bold;">return</span> <span style="color: #4e3163;">0</span>;
-<span style="color: #3a81c3;">}</span>
-
-</pre>
+<p>
+然后线性代数也是需要继续学的，我认为这部分学到什么程度都不为过。
+还有以前总是有些东西搞不懂，现在慢慢也觉得懂了。发现当搞不懂的时候，
+不用着急或者懊恼，有时候真的是没转过弯来，那就换换环境，先做点别的。
+那种搞不懂就一定埋头硬钻的学习不太适合我。（该钻还得钻啊）
+</p>
 </div>
 </div>
-</div>
 
-<div id="outline-container-org6ead6f5" class="outline-2">
-<h2 id="org6ead6f5"><span class="section-number-2">2</span> 2018年</h2>
+<div id="outline-container-orgf955646" class="outline-2">
+<h2 id="orgf955646"><span class="section-number-2">2</span> 字符串</h2>
 <div class="outline-text-2" id="text-2">
+<p>
+我把对于单个串的字符串算法都学完了，剩下的都是多模式，多个串的算法。
+最大的区别在于 Trie 树，其实多模式就是把对单个串的操作移到 Trie 树上。
+而 Trie 本身又有一些很好的性质，一般都能和路径还有子树扯上关系。
+正因为这些性质，所以字符串处理一般都能达到线性的复杂度。（很强）
+</p>
 </div>
-<div id="outline-container-orgdf982a6" class="outline-3">
-<h3 id="orgdf982a6"><span class="section-number-3">2.1</span> 2月</h3>
+
+<div id="outline-container-org9fe8bf6" class="outline-3">
+<h3 id="org9fe8bf6"><span class="section-number-3">2.1</span> AC 自动机</h3>
 <div class="outline-text-3" id="text-2-1">
-</div>
-<div id="outline-container-org3e5f4fd" class="outline-4">
-<h4 id="org3e5f4fd"><span class="section-number-4">2.1.1</span> 7日</h4>
-<div class="outline-text-4" id="text-2-1-1">
 <p>
-今天看到一个比较有意思的 c++ 库 <a href="http://cgi.di.uoa.gr/~smaragd/fc++/">fc++</a> ，用 c++ 来实现函数式编程。
-毫无疑问是用到了 <code>template</code> ，这点是跑不了的，多态什么的都得靠它。
-但是让我吃惊的是它不需要用到任何新的 c++ 特性，
-官网上的测试编译器只用到了 g++3 ！
-（也说明了这个东西已经不新了）
-不过有点坑的是它没有 <b>任何</b> 标准文档，就算是英文的也比没有要强得多啊。
-但是它除了库文件之外还有一个文件夹的例子，里面有很多特性的示例，
-也许读代码比文档会更好吧。
+本身就是 kmp 算法放在 Trie 树上，学长上的课上也讲过很多了。
+有些例题给出了很妙的套路，唯一没有实现的就是 <b>代码！！！！</b>
+回来之后就不应该再有这种问题了。
 </p>
 </div>
 </div>
-<div id="outline-container-org4418291" class="outline-4">
-<h4 id="org4418291"><span class="section-number-4">2.1.2</span> 九日</h4>
-<div class="outline-text-4" id="text-2-1-2">
+
+<div id="outline-container-orgbd481a6" class="outline-3">
+<h3 id="orgbd481a6"><span class="section-number-3">2.2</span> 后缀 数组 / 自动机</h3>
+<div class="outline-text-3" id="text-2-2">
 <p>
-<a href="file://./plan0209.html">寒假计划</a>
+这部分真是知道的比较少，
+但是貌似这两个东西威力巨大，能够做出很多很强的性质出来。
 </p>
 </div>
 </div>
+</div>
+
+<div id="outline-container-orgdffc72e" class="outline-2">
+<h2 id="orgdffc72e"><span class="section-number-2">3</span> 数据结构</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+动手能力，不多强调了。
+</p>
+</div>
+
+<div id="outline-container-org7a97de6" class="outline-3">
+<h3 id="org7a97de6"><span class="section-number-3">3.1</span> 动态树</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+这个情况和上面就相反，模板什么的都会码了，用起来就各种问号，
+感觉学的东西和题目拉不出关系来。要扎实一点，把每个细节都弄懂。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9842630" class="outline-3">
+<h3 id="org9842630"><span class="section-number-3">3.2</span> 可持久化数据结构</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+打算和函数式编程一起学，期望能得到更深入的理解。
+资料什么的也搜罗的七七八八差不多了，学起来应该不会太难，
+毕竟有的以前就会了，不用从头开始能省蛮多时间。
+要注意的地方：
+</p>
+<ul class="org-ul">
+<li>实现的简易程度，太复杂的实现会和考试脱节</li>
+<li>实现的效率，我最近的代码跑得越来越慢了（搞不懂为什么）</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2f430d5" class="outline-2">
+<h2 id="org2f430d5"><span class="section-number-2">4</span> 数学</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+翻来覆去就是组合和线代，说到底也就生成函数那一块难一些。
+需要大力注意的是解题时的效率问题，这部分还是看手算。
+学的东西一定不能和考试脱节，不然就都是虚的。
+</p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Dez</p>
-<p class="date">Created: 2018-02-09 五 08:56</p>
+<p class="date">Created: 2018-02-09 五 08:51</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
