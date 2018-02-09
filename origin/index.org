@@ -1,1 +1,33 @@
+#+TITLE: DesZou.github.io
+#+AUTHOR: Dez
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="readtheorg.css"/>
 
+* 关于
+  这是用来记录所有以后可能会用到的东西的地方，
+  也是拿来好玩的。这里的 css 样式来自 http://book.emacs-china.org/。
+
+  #+begin_src cpp
+  
+  #include <iostream>
+
+  auto main() -> int {
+      std::cout << "Hello, world!" << std::endl;
+  
+      return 0;
+  }
+  
+  #+end_src
+
+* 2018年
+** 2月
+*** 7日
+    今天看到一个比较有意思的 c++ 库 [[http://cgi.di.uoa.gr/~smaragd/fc++/][fc++]] ，用 c++ 来实现函数式编程。
+    毫无疑问是用到了 =template= ，这点是跑不了的，多态什么的都得靠它。
+    但是让我吃惊的是它不需要用到任何新的 c++ 特性，
+    官网上的测试编译器只用到了 g++3 ！
+    （也说明了这个东西已经不新了）
+    不过有点坑的是它没有 *任何* 标准文档，就算是英文的也比没有要强得多啊。
+    但是它除了库文件之外还有一个文件夹的例子，里面有很多特性的示例，
+    也许读代码比文档会更好吧。
+*** 9日
+    [[https://deszou.github.io/plan0209.html][寒假计划]]
